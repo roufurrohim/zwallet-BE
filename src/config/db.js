@@ -1,8 +1,8 @@
-const { DB_USERNAME, DB_PASSWORD } = require("../helpers/env");
+const { DB_USERNAME, DB_PASSWORD, DB_HOST } = require("../helpers/env");
 const { Sequelize } = require("sequelize");
 
 const db = new Sequelize("zwallet", DB_USERNAME, DB_PASSWORD, {
-  host: "localhost",
+  host: DB_HOST,
   dialect: "mysql",
   // dialectOptions: {
   //   useUTC: true, //for reading from database

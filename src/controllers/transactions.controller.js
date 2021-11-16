@@ -18,6 +18,7 @@ const transactions = {
           { model: usersModels, as: "senderUsers" },
           { model: usersModels, as: "receiverUsers" },
         ],
+        order: [["id", "DESC"]],
       });
       success(res, result, "Get All Transactions Success");
     } catch (error) {
