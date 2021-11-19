@@ -12,7 +12,7 @@ app.use(usersRouter);
 app.use(transactionsRouter);
 app.use(express.static(__dirname + "/uploads"));
 
-const port = process.env.PORT || 4004;
+const port = process.env.PORT || 8080;
 app.listen(port, () => {
   console.log(`Service running on port ${port}`);
 });
